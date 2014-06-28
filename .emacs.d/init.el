@@ -1,4 +1,5 @@
 ; 設定反映はM-x eval-buffer
+; ln -s ~/dotfiles/.emacs.d ~/.emacs.d
 
 ;; 言語設定
 (set-language-environment 'Japanese)
@@ -11,25 +12,25 @@
 
 ;;;表示に関する項目
 ;;カラム番号を表示
-(column-number-mode t)
+;(column-number-mode t)
 
 ;; カレント行を目立たせる
-(global-hl-line-mode)
+;(global-hl-line-mode)
 
 ;; ツールバーを表示しない
-(tool-bar-mode nil)
+;(tool-bar-mode nil)
 
 ;;ファイルサイズを表示
-(size-indication-mode t)
+;(size-indication-mode t)
 ;;時計を表示
-(setq display-time-day-and-date t)
-(setq display-time-24hr-format t)
-(display-time-mode t)
+;(setq display-time-day-and-date t)
+;(setq display-time-24hr-format t)
+;(display-time-mode t)
 ;;バッテリー残量を表示
-(display-battery-mode t)
+;(display-battery-mode t)
 
 ;括弧のハイライト
-(show-paren-mode t)
+;(show-paren-mode t)
 
 
 ;;フォントに関する設定
@@ -57,8 +58,8 @@
 ;M-x package-initialize
 
 ;; anything関連構成
-(require 'anything)
-(global-set-key (kbd "C-:") 'anything)
+;(require 'anything)
+;(global-set-key (kbd "C-:") 'anything)
 
 ;; バックアップ・オートセーブを行わない
 (setq make-backup-files nil)
@@ -68,5 +69,3 @@
 
 ;; emacs-server
 (server-start)
-
-

@@ -1,5 +1,6 @@
 # zsh Settings
 # source ~/.zshrc
+# ln -s ~/dotfiles/.zshrc ~/.zshrc
 
 # 環境変数
 # init.el (server-start)
@@ -22,4 +23,4 @@ setopt list_packed
 setopt nolistbeep
 
 # emacsのエイリアス
-alias emacs='emacs -nw'
+alias emacs='emacs-24.3 -nw'
